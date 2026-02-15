@@ -39341,38 +39341,7 @@ const rF = ({
         delay: 0.4,
       },
     ];
-    return p.jsx("section", {
-      className: "py-16 px-6",
-      children: p.jsxs("div", {
-        className: "max-w-4xl mx-auto",
-        children: [
-          p.jsxs(q.div, {
-            initial: { opacity: 0, y: 20 },
-            whileInView: { opacity: 1, y: 0 },
-            viewport: { once: !0 },
-            className: "text-center mb-10",
-            children: [
-              p.jsxs("h2", {
-                className:
-                  "font-storybook text-3xl md:text-4xl text-forest-dark mb-3",
-                children: [t("stats.title", "Live Stats"), " 📊"],
-              }),
-              p.jsx("p", {
-                className: "font-body text-muted-foreground",
-                children: t("stats.subtitle", "Real-time $PUNCH token data"),
-              }),
-            ],
-          }),
-          i && !r
-            ? p.jsx(iF, { onRetry: u, isRetrying: a })
-            : p.jsx("div", {
-                className:
-                  "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4",
-                children: d.map((h, f) => p.jsx(sF, { ...h, isLoading: r }, f)),
-              }),
-        ],
-      }),
-    });
+
   },
   Zk = "/assets/punch-gallery-1-CZt1JFPO.webp",
   e_ = "/assets/punch-gallery-2-BFjUVpFJ.webp",
