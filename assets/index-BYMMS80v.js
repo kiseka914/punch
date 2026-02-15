@@ -39252,7 +39252,7 @@ const rF = ({
               v
             );
             const w = await fetch(
-              "https://api.dexscreener.com/latest/dex/tokens/0xComingSoon"
+              "https://api.dexscreener.com/latest/dex/tokens/0x9df87cbc8c22b67c84ef7c77a990f8e72dfbfc3f"
             );
             if (!w.ok) throw new Error("DexScreener request failed");
             const S = await w.json();
@@ -39274,7 +39274,7 @@ const rF = ({
             console.warn("Cache returned zeros, trying DexScreener fallback");
             const S = await (
               await fetch(
-                "https://api.dexscreener.com/latest/dex/tokens/0xComingSoon"
+                "https://api.dexscreener.com/latest/dex/tokens/0x9df87cbc8c22b67c84ef7c77a990f8e72dfbfc3f"
               )
             ).json();
             if (S.pairs && S.pairs.length > 0) {
@@ -39464,7 +39464,7 @@ const rF = ({
       e = Oo(t, { once: !0, margin: "-100px" }),
       [n, r] = b.useState(!1),
       { t: s } = It(),
-      i = "0xComingSoon",
+      i = "0x9df87cbc8c22b67c84ef7c77a990f8e72dfbfc3f",
       o = () => {
         navigator.clipboard.writeText(i),
           r(!0),
@@ -39629,7 +39629,7 @@ const rF = ({
                 ],
               }),
               p.jsxs("a", {
-                href: "https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0xComingSoon",
+                href: "https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0x9df87cbc8c22b67c84ef7c77a990f8e72dfbfc3f",
                 target: "_blank",
                 rel: "noopener noreferrer",
                 className:
@@ -39640,7 +39640,7 @@ const rF = ({
                 ],
               }),
               p.jsxs("a", {
-                href: "https://dexscreener.com/ethereum/0xComingSoon",
+                href: "https://dexscreener.com/ethereum/0x9df87cbc8c22b67c84ef7c77a990f8e72dfbfc3f",
                 target: "_blank",
                 rel: "noopener noreferrer",
                 className:
@@ -40140,7 +40140,7 @@ const rF = ({
             className: "flex items-center justify-center gap-5 mb-8",
             children: [
               p.jsx("a", {
-                href: "https://www.dexscreener.com/ethereum/0xComingSoon",
+                href: "https://www.dexscreener.com/ethereum/0x9df87cbc8c22b67c84ef7c77a990f8e72dfbfc3f",
                 target: "_blank",
                 rel: "noopener noreferrer",
                 className:
@@ -40152,7 +40152,7 @@ const rF = ({
                 }),
               }),
               p.jsx("a", {
-                href: "https://www.dextools.io/en/app/pair-explorer/",
+                href: "https://www.dextools.io/app/ether/pair-explorer/0x83147289bac9f115e39b6ae8053c50f059794410",
                 target: "_blank",
                 rel: "noopener noreferrer",
                 className:
