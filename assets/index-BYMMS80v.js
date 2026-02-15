@@ -40171,26 +40171,26 @@ const rF = ({
             className: "flex items-center justify-center gap-5 mb-8",
             children: [
               p.jsx("a", {
-                href: "https://www.geckoterminal.com/solana/pools/A6KHMiFzn9AM7VKBtVP4fZNY9bCo2jP63R9dphaW1vrq",
+                href: "https://www.dexscreener.com/ethereum/0xComingSoon",
                 target: "_blank",
                 rel: "noopener noreferrer",
                 className:
                   "w-12 h-12 rounded-full bg-cream paper-shadow overflow-hidden hover:scale-110 transition-transform duration-200",
                 children: p.jsx("img", {
                   src: mF,
-                  alt: "GeckoTerminal",
+                  alt: "Dexscreener",
                   className: "w-full h-full object-contain p-1.5",
                 }),
               }),
               p.jsx("a", {
-                href: "https://www.coingecko.com/en/coins/punch-2",
+                href: "https://www.dextools.io/en/app/pair-explorer/",
                 target: "_blank",
                 rel: "noopener noreferrer",
                 className:
                   "w-12 h-12 rounded-full bg-cream paper-shadow overflow-hidden hover:scale-110 transition-transform duration-200",
                 children: p.jsx("img", {
                   src: gF,
-                  alt: "CoinGecko",
+                  alt: "Dextools",
                   className: "w-full h-full object-contain p-1.5",
                 }),
               }),
@@ -40892,7 +40892,7 @@ const rF = ({
                     ],
                   }),
                   p.jsx(ld, {
-                    to: "/",
+                    to: "https://x.com/PunchErcCoin",
                     className:
                       "inline-flex items-center gap-2 px-6 py-3 bg-forest text-cream rounded-full font-storybook text-lg hover:bg-forest-dark transition-colors paper-shadow",
                     children: t("sanctuary.joinCommunity"),
@@ -42281,7 +42281,7 @@ const dB = { home: "Home", sanctuary: "Sanctuary", photoBooth: "Photo Booth" },
     totalSupply: "Total Supply",
     totalSupplyValue: "1 Billion",
     liquidity: "Liquidity",
-    liquidityDesc: "Locked & Burned",
+    liquidityDesc: "Locked",
     tax: "Tax",
     taxDesc: "Zero Tax",
     ownership: "Ownership",
