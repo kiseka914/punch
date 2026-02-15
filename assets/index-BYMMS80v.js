@@ -39252,7 +39252,7 @@ const rF = ({
               v
             );
             const w = await fetch(
-              "https://api.dexscreener.com/latest/dex/tokens/NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+              "https://api.dexscreener.com/latest/dex/tokens/0xComingSoon"
             );
             if (!w.ok) throw new Error("DexScreener request failed");
             const S = await w.json();
@@ -39274,7 +39274,7 @@ const rF = ({
             console.warn("Cache returned zeros, trying DexScreener fallback");
             const S = await (
               await fetch(
-                "https://api.dexscreener.com/latest/dex/tokens/NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump"
+                "https://api.dexscreener.com/latest/dex/tokens/0xComingSoon"
               )
             ).json();
             if (S.pairs && S.pairs.length > 0) {
@@ -39495,7 +39495,7 @@ const rF = ({
       e = Oo(t, { once: !0, margin: "-100px" }),
       [n, r] = b.useState(!1),
       { t: s } = It(),
-      i = "NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+      i = "0xComingSoon",
       o = () => {
         navigator.clipboard.writeText(i),
           r(!0),
@@ -39649,7 +39649,7 @@ const rF = ({
             transition: { duration: 0.8, delay: 0.8 },
             children: [
               p.jsxs("a", {
-                href: "https://phantom.app",
+                href: "https://metamask.io",
                 target: "_blank",
                 rel: "noopener noreferrer",
                 className:
@@ -39660,7 +39660,7 @@ const rF = ({
                 ],
               }),
               p.jsxs("a", {
-                href: "https://raydium.io",
+                href: "https://app.uniswap.org/swap?chain=mainnet&inputCurrency=NATIVE&outputCurrency=0xComingSoon",
                 target: "_blank",
                 rel: "noopener noreferrer",
                 className:
@@ -39671,18 +39671,7 @@ const rF = ({
                 ],
               }),
               p.jsxs("a", {
-                href: "https://jup.ag",
-                target: "_blank",
-                rel: "noopener noreferrer",
-                className:
-                  "inline-flex items-center gap-2 px-5 py-2.5 bg-cardboard text-cream rounded-full font-body hover:bg-cardboard-dark transition-colors paper-shadow",
-                children: [
-                  p.jsx(Lc, { className: "w-4 h-4" }),
-                  s("howToBuy.buyOnJupiter"),
-                ],
-              }),
-              p.jsxs("a", {
-                href: "https://dexscreener.com/solana/NV2RYH954cTJ3ckFUpvfqaQXU4ARqqDH3562nFSpump",
+                href: "https://dexscreener.com/ethereum/0xComingSoon",
                 target: "_blank",
                 rel: "noopener noreferrer",
                 className:
@@ -42273,16 +42262,16 @@ const dB = { home: "Home", sanctuary: "Sanctuary", photoBooth: "Photo Booth" },
     title: "How to Buy",
     subtitle: "Join the sanctuary in just a few simple steps",
     step1Title: "Get a Wallet",
-    step1Desc: "Download Phantom or Solflare wallet for your browser or phone",
-    step2Title: "Get Some SOL",
-    step2Desc: "Buy SOL from an exchange and send it to your wallet",
-    step3Title: "Swap for $PUNCH",
-    step3Desc: "Use Raydium or Jupiter to swap your SOL for $PUNCH",
-    step4Title: "Welcome Home!",
-    step4Desc: "You're now part of Punch's cozy community",
+    step1Desc: "Download and install MetaMask.",
+    step2Title: "Get Some ETH",
+    step2Desc: "Buy some ETH and send it to your wallet.",
+    step3Title: "Go To Uniswap",
+    step3Desc: "Go to uniswap and connect your wallet.",
+    step4Title: "Swap $PUNCH",
+    step4Desc: "Past the contract address and swap.",
     contractAddress: "Contract Address",
-    getPhantom: "Use Phantom Wallet",
-    buyOnRaydium: "Buy on Raydium",
+    getPhantom: "Use Metamask Wallet",
+    buyOnRaydium: "Buy on Uniswap",
     buyOnJupiter: "Buy on Jupiter",
     dexscreener: "DexScreener",
   },
